@@ -1,33 +1,27 @@
-# AI Models for Demand-Supply Forecasting in CE Marketplaces
+AI Models for Demand-Supply Forecasting in Circular Economy Marketplaces
+This repository contains Python notebooks for implementing and simulating AI models designed to forecast demand, predict supply, and optimize pricing within a Circular Economy (CE) marketplace. The models included range from time-series forecasting to reinforcement learning approaches, providing a flexible foundation for demand-supply forecasting in CE systems.
 
-This repository contains 11 Python scripts designed for demand-supply forecasting, resource management, and dynamic pricing within Circular Economy (CE) marketplaces. Each notebook demonstrates different AI models and techniques used for forecasting and optimization.
+Note: These scripts serve as base models and are intended for educational and initial development purposes. The quality of results will depend heavily on data quality, hyperparameter tuning, and model adjustments according to specific use cases. There is no support for these models, and they are not guaranteed to provide optimized results without further customization.
 
-## Disclaimer
+Files in this Repository
+001_Input_Data_Generation.ipynb - Script for generating initial synthetic data, tailored to simulate realistic input data for CE marketplaces.
+001_Inputdata_characterization.ipynb - Provides data characterization for understanding and preparing the input data before model training.
+02_ARIMA_model_simulation.ipynb - Implementation of the ARIMA model for time-series forecasting of demand and supply in CE systems.
+03_LinearRegression_model_simulation.ipynb - Linear Regression model for basic trend analysis in demand-supply forecasting.
+04_LSTM_model_simulation.ipynb - Long Short-Term Memory (LSTM) network for sequential data analysis, capturing long-term dependencies in demand and supply fluctuations.
+05_RandomForest_model_simulation.ipynb - Random Forest model for handling non-linear relationships in demand-supply forecasting.
+06_Prophet_model_simulation.ipynb - Prophet model for capturing seasonality and trend dynamics in CE marketplaces.
+07_GBR_model_simulation.ipynb - Gradient Boosting Regressor model, suitable for complex non-linear demand-supply interactions.
+08_NeuralNetwork_model_simulation.ipynb - Neural Network model for handling intricate relationships within CE variables.
+09_Q_Learning_Pricing_Optimization.ipynb - Q-Learning model for dynamic pricing optimization based on real-time market conditions.
+10_Deep_Q_Learning_Pricing_Optimization.ipynb - Deep Q-Learning model for enhanced pricing optimization with reinforcement learning.
+11_WasteGeneration_EconomicGrowth_Model.ipynb - Model analyzing the impact of waste generation and economic growth on CE marketplace dynamics.
+Important Notes
+Input and Output Paths: The paths to input and output files need to be updated in each script based on the user's preference. Example placeholder paths in the scripts include:
+input_file_path = r'/path/to/your/inputdata.csv'
+output_plot_path = r'/path/to/your/output/plots/'
+Ensure you customize these paths to reflect your local or cloud storage structure.
+Model Customization: These models are starting points. Effective results will depend on tuning hyperparameters, modifying model architectures, and optimizing based on specific data.
+License
+This repository is released without any guarantee of support. Users are encouraged to adapt and modify the code as needed to suit their applications.
 
-These scripts are base models intended for educational and experimental use. The quality of results is highly dependent on factors such as input data quality, feature engineering, and hyperparameter tuning. There is no guarantee of achieving specific outcomes, as these factors can significantly influence model performance. Additionally, these models come without support, and users are encouraged to customize and improve them as needed.
-
-## Files
-
-1. **01_inputdata_characterization.ipynb** - Characterizes and preprocesses input data for model training.
-2. **02_ARIMA_model_simulation.ipynb** - Implements the ARIMA model for time-series forecasting.
-3. **03_LinearRegression_model_simulation.ipynb** - Applies linear regression for demand-supply predictions.
-4. **04_LSTM_model_simulation.ipynb** - Uses LSTM networks to model sequential dependencies in data.
-5. **05_RandomForest_model_simulation.ipynb** - Leverages Random Forest for non-linear forecasting in CE marketplaces.
-6. **06_Prophet_model_simulation.ipynb** - Utilizes the Prophet model to capture seasonality and trends.
-7. **07_GBR_model_simulation.ipynb** - Implements Gradient Boosting Regressor for robust forecasting.
-8. **08_NeuralNetwork_model_simulation.ipynb** - Trains a Neural Network model to handle complex interdependencies.
-9. **09_Q_Learning_Pricing_Optimization.ipynb** - Uses Q-learning for dynamic pricing optimization.
-10. **10_Deep_Q_Learning_Pricing_Optimization.ipynb** - Applies Deep Q-Learning for advanced pricing strategies.
-11. **11_WasteGeneration_EconomicGrowth_Model.ipynb** - Analyzes waste generation and economic growth impacts in CE systems.
-
-## Usage
-
-Each notebook can be executed independently. Simply open the desired notebook and run the cells in order to reproduce the analysis or model results. Please note that significant improvements may require further tuning and domain-specific adjustments.
-
-## Requirements
-
-To run these notebooks, make sure you have installed the necessary Python libraries, such as `numpy`, `pandas`, `scikit-learn`, `tensorflow`, and `matplotlib`.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
