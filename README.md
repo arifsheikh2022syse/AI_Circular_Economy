@@ -1,20 +1,33 @@
-# AI Models for Circular Economy Resource Management
+# AI Models for Demand-Supply Forecasting in CE Marketplaces
 
-This repository contains Python scripts developed to model demand, supply, and dynamic pricing within a Circular Economy (CE) digital marketplace. The models include time-series forecasting, reinforcement learning, and regression models, each designed to enhance decision-making for resource allocation.
+This repository contains 11 Python scripts designed for demand-supply forecasting, resource management, and dynamic pricing within Circular Economy (CE) marketplaces. Each notebook demonstrates different AI models and techniques used for forecasting and optimization.
 
-## Included Models
+## Disclaimer
 
-1. `ARIMA_Model.py`: Time-series forecasting model based on ARIMA for demand and supply prediction.
-2. `LSTM_Model.py`: Long Short-Term Memory neural network for capturing long-term dependencies in resource demand and supply.
-3. `Prophet_Model.py`: Prophet model for handling seasonality and trends in resource allocation.
-4. `Q_Learning_Pricing.py`: Q-learning algorithm for dynamic pricing in CE systems.
-5. `Gradient_Boosting_Model.py`: Gradient Boosting Regressor for non-linear demand-supply modeling.
-6. `Neural_Network_Model.py`: Neural network for complex, non-linear dependencies across CE variables.
-7. ... [Continue listing remaining models briefly]
+These scripts are base models intended for educational and experimental use. The quality of results is highly dependent on factors such as input data quality, feature engineering, and hyperparameter tuning. There is no guarantee of achieving specific outcomes, as these factors can significantly influence model performance. Additionally, these models come without support, and users are encouraged to customize and improve them as needed.
 
-## Getting Started
-1. **Requirements**: Ensure Python 3.x is installed along with the necessary packages (listed in `requirements.txt` if included).
-2. **Run the Scripts**: Each model script is standalone. Simply run `python <model_name>.py` after setting up dependencies.
+## Files
+
+1. **01_inputdata_characterization.ipynb** - Characterizes and preprocesses input data for model training.
+2. **02_ARIMA_model_simulation.ipynb** - Implements the ARIMA model for time-series forecasting.
+3. **03_LinearRegression_model_simulation.ipynb** - Applies linear regression for demand-supply predictions.
+4. **04_LSTM_model_simulation.ipynb** - Uses LSTM networks to model sequential dependencies in data.
+5. **05_RandomForest_model_simulation.ipynb** - Leverages Random Forest for non-linear forecasting in CE marketplaces.
+6. **06_Prophet_model_simulation.ipynb** - Utilizes the Prophet model to capture seasonality and trends.
+7. **07_GBR_model_simulation.ipynb** - Implements Gradient Boosting Regressor for robust forecasting.
+8. **08_NeuralNetwork_model_simulation.ipynb** - Trains a Neural Network model to handle complex interdependencies.
+9. **09_Q_Learning_Pricing_Optimization.ipynb** - Uses Q-learning for dynamic pricing optimization.
+10. **10_Deep_Q_Learning_Pricing_Optimization.ipynb** - Applies Deep Q-Learning for advanced pricing strategies.
+11. **11_WasteGeneration_EconomicGrowth_Model.ipynb** - Analyzes waste generation and economic growth impacts in CE systems.
+
+## Usage
+
+Each notebook can be executed independently. Simply open the desired notebook and run the cells in order to reproduce the analysis or model results. Please note that significant improvements may require further tuning and domain-specific adjustments.
+
+## Requirements
+
+To run these notebooks, make sure you have installed the necessary Python libraries, such as `numpy`, `pandas`, `scikit-learn`, `tensorflow`, and `matplotlib`.
 
 ## License
-MIT License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
