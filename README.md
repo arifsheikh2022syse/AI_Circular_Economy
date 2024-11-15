@@ -44,6 +44,10 @@ This repository contains Python notebooks designed for implementing and simulati
 12. **`11_WasteGeneration_EconomicGrowth_Model.ipynb`**  
     Model analyzing the impact of waste generation and economic growth on CE marketplace dynamics.
 
+13. **`CE_data.csv`**  
+    Synthetic dataset used for model evaluation in Circular Economy (CE) marketplace analysis.
+
+
 ---
 
 ## Important Notes
